@@ -1,0 +1,89 @@
+
+body{
+  background-color: #222;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+
+}
+.recipe-card {
+  object-fit: cover;
+  width: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: white;
+  font-family: "Georgia", serif;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+
+/* ---------- HEADER ---------- */
+.recipe-header {
+  background: linear-gradient(to bottom, #d9534f, #b43636);
+  color: white;
+  text-align: center;
+  padding: 18px 10px;
+}
+
+.recipe-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: lighter;
+}
+.recipe-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.recipe-header p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ---------- BODY ---------- */
+.recipe-body {
+  padding: 25px 25px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+.img{
+  height: 150px;
+  width: 200px;
+}
+
+.recipe-body p {
+  margin: 8px 0;
+}
+
+.recipe-body span {
+  font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+.recipe-footer {
+  background: #e2c6e2;
+  text-align: center;
+  padding: 12px 0;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 17px;
+  color: #333;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  height: 10vh;
+  font-weight: 700px;
+  font-size: 50px;
+  background-color: rgb(86, 74, 19);
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
