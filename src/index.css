@@ -87,3 +87,76 @@ body{
   padding-top: 20px;
   margin-bottom: 30px;
 }
+
+.main {
+  perspective: 1000px;
+}
+
+.recipe-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px) rotateX(6deg) rotateY(-6deg) scale(1.02);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+}
+/* Header layout for NavBar.jsx with like/dislike */
+.recipe-header {
+  background: linear-gradient(to bottom, #d9534f, #b43636);
+  color: white;
+  padding: 18px 10px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* left button, center text, right button */
+  align-items: center;
+  gap: 12px;
+
+  position: relative;
+  z-index: 10; /* keep header above other content */
+}
+
+/* Center text area */
+.recipe-header-center {
+  text-align: center;
+}
+
+/* Buttons */
+.like-btn,
+.dislike-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #c9302c;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+
+  position: relative;
+  z-index: 11;
+}
+
+/* Make the whole card a positioned element */
+.recipe-card {
+  position: relative;
+}
+
+/* Ensure header (with buttons) is above the body/image */
+.recipe-header {
+  position: relative;
+  z-index: 20; /* above body */
+}
+
+/* Body goes underneath header in stacking order */
+.recipe-body {
+  position: relative;
+  z-index: 10;
+}
+
+
+
