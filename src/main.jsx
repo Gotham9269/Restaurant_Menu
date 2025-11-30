@@ -18,4 +18,3 @@
           }
 
 root.render(<RecipeMenu />);
-// root.render(<LikeButton />)
